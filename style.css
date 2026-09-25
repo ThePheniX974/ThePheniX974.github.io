@@ -186,3 +186,15 @@ a:focus-visible, .btn:focus-visible { outline: 3px solid var(--accent); outline-
 /* Ligne « Technologies » sous une expérience */
 .timeline-tech { margin: .6rem 0 0; font-size: .95rem; color: var(--muted); }
 .timeline-tech strong { color: var(--text); }
+
+/* Étiquette et note des cartes projets */
+.card-label { font-size: .8rem; font-weight: 700; color: var(--accent); text-transform: uppercase; letter-spacing: .06em; margin-bottom: .4rem; }
+.card-note { margin: auto 0 0; font-size: .9rem; color: var(--muted); font-style: italic; }
+.visually-hidden { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+@media print {
+  .card-label { font-size: 7.5pt; margin-bottom: 2pt; }
+  .card-note { font-size: 8pt; }
+  .card-link { display: inline; font-size: 8.5pt; }
+  .card-link::after { content: " : " attr(href); }
+  .card-link .visually-hidden { display: none; }
+}
