@@ -182,3 +182,7 @@ a:focus-visible, .btn:focus-visible { outline: 3px solid var(--accent); outline-
   .contact-label { min-width: 0; margin-right: 4pt; }
   a { color: var(--text); text-decoration: none; }
 }
+
+/* Ligne « Technologies » sous une expérience */
+.timeline-tech { margin: .6rem 0 0; font-size: .95rem; color: var(--muted); }
+.timeline-tech strong { color: var(--text); }
